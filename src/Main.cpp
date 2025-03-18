@@ -1,8 +1,13 @@
 #include <iostream>
-#include <SDL2/SDL.h>
+#include "Game.h"
 
-int main() {
-    SDL_Init(SDL_INIT_EVERYTHING);
-    std::cout << "Hello, world!" << std::endl;
+int main(int argc,char* argv[]) 
+{
+    Game game; // Contructor and Destructor are called here
+
+    game.Initialize();
+    game.Run();
+    game.Destroy();
+
     return 0;
 }

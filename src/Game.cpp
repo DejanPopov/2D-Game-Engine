@@ -68,17 +68,17 @@ void Game::ProcessInput()
                     isRunning = false;
                 }
                 break;
-
-
-
-
         }
     }
 }
 
 void Game::Update()
 {
-
+    // Paint window with solid color
+    // Choose color, clear renderer and than present renederer with choosen color
+    SDL_SetRenderDrawColor(renderer, 250, 0 ,0, 255);
+    SDL_RenderClear(renderer);
+    SDL_RenderPresent(renderer);
 }
 
 void Game::Render()

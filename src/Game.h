@@ -10,7 +10,7 @@ class Game
     
         SDL_Window*   window;
         SDL_Renderer* renderer;
-        bool isRUnning;
+        bool          isRunning;
 
     public:
 
